@@ -1,7 +1,6 @@
 В ходе предыдущего задания был развернут статический сайт следующего вида
- ![1](https://github.com/user-attachments/assets/ecdb2616-1f28-4757-94d9-f2ca5ae7c8b3)
+![1](https://github.com/user-attachments/assets/ecdb2616-1f28-4757-94d9-f2ca5ae7c8b3)
 
- 
 Стандартная информация MkDocs в данном сайте была заменена
 ![2](https://github.com/user-attachments/assets/11c1e828-28f2-4e8f-91d7-970218298e8c)
 
@@ -17,8 +16,8 @@
 <img width="764" alt="image" src="https://github.com/user-attachments/assets/39510069-aaf1-41ce-a14f-fa1fa2ce1795">
 
 
-На основе <a href = "https://github.com/nzhukov/deploy-ghactions/tree/main">репозитория</a> 
-быа создана цепочка пайплайнов для для тестирования и  
+На основе <a href = "https://github.com/nzhukov/deploy-ghactions/tree/main">репозитория</a>
+быа создана цепочка пайплайнов для для тестирования и
 сборки статики  — фронтэнда сайта, а затем построения собственно самого сайта
 и деплоя его на GitHub Pages, при этом была предусмотрена возможность сборки с помощью PostCss.
 
