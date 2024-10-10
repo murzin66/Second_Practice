@@ -1,0 +1,24 @@
+name: Test  # Название действия для тестирования
+
+on:
+  pull_request:  # Триггер для запуска тестов при создании pull request
+  push:
+    branches:
+      - main  # Запускаем тесты при пуше в ветку main
+
+jobs:
+  lint:  # Название задачи для линтинга и тестирования
+    runs-on: ubuntu-latest  # Запускаем на последней версии Ubuntu
+    strategy:
+      matrix:
+        node-version: [22.x]  # Используем версию Node.js 22.x для тестирования
+
+    steps:
+      - uses: actions/checkout@v2  # Проверяем код из репозитория
+      - uses: actions/setup-node@v1  # Устанавливаем Node.js
+        with:
+          node-version: ${{ matrix.node-version }}  # Указываем версию Node.js из матрицы
+
+      - run: npm ci  # Устанавливаем зависимости проекта с помощью npm ci
+      
+      - run: npm test  # Запускаем тесты проекта
