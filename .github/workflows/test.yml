@@ -20,5 +20,4 @@ jobs:
           node-version: ${{ matrix.node-version }}  # Указываем версию Node.js из матрицы
 
       - run: npm ci  # Устанавливаем зависимости проекта с помощью npm ci
-      
       - run: npm test  # Запускаем тесты проекта
